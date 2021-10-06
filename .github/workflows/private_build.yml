@@ -7,7 +7,7 @@ on:
  workflow_dispatch:
    inputs:
      mainAppFolder:
-        description: 'The module folder name, most of the time it's "app"'     
+        description: 'The module folder name: default "app"'     
         required: true
         default: 'app'
    
