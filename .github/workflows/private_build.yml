@@ -39,5 +39,6 @@ jobs:
       uses: EasyDev-11436/action-release-debugapk@master
       env:
        GITHUB_TOKEN: ${{ secrets.PRIVATE_TOKEN }}
+       REPO_BRANCH: ${{ github.event.inputs.defaultBranch }}
        APP_FOLDER: ${{ github.event.inputs.mainAppFolder }}
        RELEASE_TITLE: ${{ github.event.inputs.releaseTitle }}
