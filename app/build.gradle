@@ -125,6 +125,12 @@ task versionName {
     }
 }
 
+task generateVersionTxt {
+    doLast {
+        file("./version.txt").text = android.defaultConfig.versionName
+    }
+}
+
 def downloadBootstrap(String arch, String expectedChecksum, String version) {
     def digest = java.security.MessageDigest.getInstance("SHA-256")
 
